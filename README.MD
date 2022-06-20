@@ -1,8 +1,8 @@
 <div align="center">
-  <a href="https://github.com/amareque/react-native-pro-picker/blob/master/media/android-example-gif.gif?raw=true">
+  <a href="https://raw.githubusercontent.com/amareque/react-native-pro-picker/main/media/android-example-gif.gif">
   	<img src="https://github.com/amareque/react-native-pro-picker/blob/master/media/android-example-gif.gif?raw=true" alt="Pro Picker Android Gif" height="160" />
   </a>
-  <a href="https://github.com/amareque/react-native-pro-picker/blob/master/media/ios-example-gif.gif?raw=true">
+  <a href="https://raw.githubusercontent.com/amareque/react-native-pro-picker/main/media/ios-example-gif.gif">
   	<img src="https://github.com/amareque/react-native-pro-picker/blob/master/media/ios-example-gif.gif?raw=true" alt="Pro Picker iOS Gif" height="160" />
   </a>
   <br>
@@ -138,11 +138,11 @@ placeholder = "Select...", cancelText = "Cancel", enabled = true
 ## Try it yourself 📱
 Try it on your device, by scanning this QR on the [Expo Go app](https://expo.dev/client):
 
-[![Expo QR](https://github.com/amareque/react-native-pro-picker/blob/master/media/example-app-expo-qr.png?raw=true)](https://github.com/amareque/react-native-pro-picker/blob/master/media/example-app-expo-qr.png?raw=true)
+[![Expo QR](https://github.com/amareque/react-native-pro-picker/blob/main/media/example-app-expo-qr.png?raw=true)](https://github.com/amareque/react-native-pro-picker/blob/master/media/example-app-expo-qr.png?raw=true)
 
 (QR not showing? Visit the [Expo Project Page](https://expo.dev/@amareque/pro-picker-example-app?serviceType=classic&distribution=expo-go))
 
-or simply try this [Snack](https://snack.expo.dev/@amareque/https://snack.expo.dev/@amareque/pro-picker-example-snack) from your browser!
+or simply try this [Snack](https://snack.expo.dev/@amareque/pro-picker-example-snack) from your browser!
 
 <br>
 
