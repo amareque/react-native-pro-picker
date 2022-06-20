@@ -1,0 +1,38 @@
+{
+  "name": "react-native-pro-picker",
+  "version": "1.1.0",
+  "description": "React Native Pro Picker gives you the option to have an ActionSheet-based picker in iOS while maintaining the basic one for android and the web.",
+  "homepage": "https://github.com/amareque/react-native-pro-picker#readme",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "author": "Agustin Mareque <amarequedev@gmail.com>",
+  "license": "MIT",
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "react native",
+    "react-native",
+    "action sheet",
+    "iOS",
+    "android",
+    "expo",
+    "picker",
+    "select",
+    "dropdown"
+  ],
+  "scripts": {
+    "compile-windows": "rd /s /q \"lib\" && tsc -p . && copyfiles -f ./src/assets/*.png lib/assets",
+    "compile-osx": "tsc -p . && copyfiles -f ./src/assets/*.png lib/assets",
+    "pack": "npm pack"
+  },
+  "dependencies": {
+    "@react-native-picker/picker": "^2.4.1",
+    "react-native": "^0.68.2"
+  },
+  "devDependencies": {
+    "@types/react-native": "^0.67.8",
+    "eslint": "^7.27.0",
+    "typescript": "^4.4.4"
+  }
+}
