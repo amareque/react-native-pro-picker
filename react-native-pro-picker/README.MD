@@ -1,10 +1,12 @@
-<div align="center">
-  <a href="https://raw.githubusercontent.com/amareque/react-native-pro-picker/main/media/android-example-gif.gif">
-  	<img src="https://github.com/amareque/react-native-pro-picker/blob/master/media/android-example-gif.gif?raw=true" alt="Pro Picker Android Gif" height="160" />
-  </a>
-  <a href="https://raw.githubusercontent.com/amareque/react-native-pro-picker/main/media/ios-example-gif.gif">
-  	<img src="https://github.com/amareque/react-native-pro-picker/blob/master/media/ios-example-gif.gif?raw=true" alt="Pro Picker iOS Gif" height="160" />
-  </a>
+<div>
+    <div style="display: flex; justify-content: center; align-items: center">
+      <a href="https://raw.githubusercontent.com/amareque/react-native-pro-picker/main/media/android-example-gif.gif" style="margin-right: 1rem;">
+        <img src="https://github.com/amareque/react-native-pro-picker/blob/main/media/android-example-gif.gif?raw=true" alt="Pro Picker Android Gif" height="400"/>
+      </a>
+      <a href="https://raw.githubusercontent.com/amareque/react-native-pro-picker/main/media/ios-example-gif.gif">
+        <img src="https://github.com/amareque/react-native-pro-picker/blob/main/media/ios-example-gif.gif?raw=true" alt="Pro Picker iOS Gif" height="400"/>
+      </a>
+    </div>
   <br>
   <br>
   <p>
@@ -13,13 +15,10 @@
   <p>
      <i>React Native Pro Picker gives you the option to have an ActionSheet-based picker in iOS while maintaining the basic one for android and the web.</i>
   </p>
-  <p>
-
-![npm](https://img.shields.io/npm/v/react-native-pro-picker)
-  </p>
 </div>
 
-<br>
+![npm](https://img.shields.io/npm/v/react-native-pro-picker)
+
 
 ## Install 🧰
 
@@ -27,8 +26,6 @@ You can install react-native-pro-picker by running the following command
 ```
 npm install react-native-pro-picker
 ```
-
-<br>
 
 ## Usage 💡
 1. Add the following import statement:
@@ -67,7 +64,6 @@ let options : ProPickerOption[] = [
 
 4. Customize your picker with the customization options.
 
-<br>
 
 ## Necessary Attributes ⚠️
 
@@ -133,8 +129,6 @@ placeholder = "Select...", cancelText = "Cancel", enabled = true
    </tbody>
 </table>
 
-<br>
-
 ## Try it yourself 📱
 Try it on your device, by scanning this QR on the [Expo Go app](https://expo.dev/client):
 
@@ -144,13 +138,9 @@ Try it on your device, by scanning this QR on the [Expo Go app](https://expo.dev
 
 or simply try this [Snack](https://snack.expo.dev/@amareque/pro-picker-example-snack) from your browser!
 
-<br>
-
 ## Contributing 🍰
 
-I won't be looking at forks and pull requests. If you want me to improve this package, feel free to reach out to me, and I'll gladly update it.
-
-<br>
+If you want me to improve this package, feel free to reach out to me, and I'll gladly update it.
 
 ## Maintainers 👷
 <table>
@@ -167,8 +157,6 @@ I won't be looking at forks and pull requests. If you want me to improve this pa
 </td>
 </tr>
 </table>
-
-<br>
 
 ## License ⚖️
 MIT
