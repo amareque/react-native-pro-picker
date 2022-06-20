@@ -1,4 +1,4 @@
-<div>
+<div align="center">
     <div style="display: flex; justify-content: center; align-items: center">
       <a href="https://raw.githubusercontent.com/amareque/react-native-pro-picker/main/media/android-example-gif.gif" style="margin-right: 1rem;">
         <img src="https://github.com/amareque/react-native-pro-picker/blob/main/media/android-example-gif.gif?raw=true" alt="Pro Picker Android Gif" height="400"/>
