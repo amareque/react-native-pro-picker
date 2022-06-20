@@ -1,9 +1,9 @@
 <div align="center">
   <a href="https://raw.githubusercontent.com/amareque/react-native-pro-picker/main/media/android-example-gif.gif">
-  	<img src="https://github.com/amareque/react-native-pro-picker/blob/master/media/android-example-gif.gif?raw=true" alt="Pro Picker Android Gif" height="160" />
+  	<img src="https://github.com/amareque/react-native-pro-picker/blob/master/media/android-example-gif.gif?raw=true" alt="Pro Picker Android Gif"/>
   </a>
   <a href="https://raw.githubusercontent.com/amareque/react-native-pro-picker/main/media/ios-example-gif.gif">
-  	<img src="https://github.com/amareque/react-native-pro-picker/blob/master/media/ios-example-gif.gif?raw=true" alt="Pro Picker iOS Gif" height="160" />
+  	<img src="https://github.com/amareque/react-native-pro-picker/blob/master/media/ios-example-gif.gif?raw=true" alt="Pro Picker iOS Gif"/>
   </a>
   <br>
   <br>
