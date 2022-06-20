@@ -75,7 +75,6 @@ let options : ProPickerOption[] = [
 <br>
 
 ## Customizable Attributes 🕹️
-placeholder = "Select...", cancelText = "Cancel", enabled = true
 <table>
    <thead>
       <th>Attribute</th>
@@ -135,8 +134,6 @@ Try it on your device, by scanning this QR on the [Expo Go app](https://expo.dev
 [![Expo QR](https://github.com/amareque/react-native-pro-picker/blob/main/media/example-app-expo-qr.png?raw=true)](https://github.com/amareque/react-native-pro-picker/blob/master/media/example-app-expo-qr.png?raw=true)
 
 (QR not showing? Visit the [Expo Project Page](https://expo.dev/@amareque/pro-picker-example-app?serviceType=classic&distribution=expo-go))
-
-or simply try this [Snack](https://snack.expo.dev/@amareque/pro-picker-example-snack) from your browser!
 
 ## Contributing 🍰
 

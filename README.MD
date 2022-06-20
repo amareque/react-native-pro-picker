@@ -135,8 +135,6 @@ Try it on your device, by scanning this QR on the [Expo Go app](https://expo.dev
 
 (QR not showing? Visit the [Expo Project Page](https://expo.dev/@amareque/pro-picker-example-app?serviceType=classic&distribution=expo-go))
 
-or simply try this [Snack](https://snack.expo.dev/@amareque/pro-picker-example-snack) from your browser!
-
 ## Contributing 🍰
 
 If you want me to improve this package, feel free to reach out to me, and I'll gladly update it.

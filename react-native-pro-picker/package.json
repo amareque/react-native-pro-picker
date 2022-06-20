@@ -1,6 +1,6 @@
 {
   "name": "react-native-pro-picker",
-  "version": "1.1.4",
+  "version": "1.2.1",
   "description": "React Native Pro Picker gives you the option to have an ActionSheet-based picker in iOS while maintaining the basic one for android and the web.",
   "homepage": "https://github.com/amareque/react-native-pro-picker#readme",
   "main": "lib/index.js",
