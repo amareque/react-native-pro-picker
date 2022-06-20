@@ -1,4 +1,5 @@
-import React, {useEffect} from "react";
+import * as React from 'react';
+import {useEffect} from "react";
 import {ActionSheetIOS, View, Text, Platform, TouchableOpacity, Image, StyleSheet} from "react-native";
 import {Picker} from "@react-native-picker/picker";
 
@@ -85,18 +86,20 @@ const ProPicker = (
         case "ios":
             view = (
                 <View>
-                    <TouchableOpacity disabled={!enabled} style={{flexDirection: "row", alignItems: "center", borderWidth: 0.5, justifyContent: "space-between", padding: 16, borderColor: iosBorderColor, backgroundColor: enabled ? backgroundColor : "#DDDDDD", height: 50, borderRadius: 10}}
+                    <TouchableOpacity disabled={!enabled} style={[styles.iosPickerMainLayout, {borderColor: iosBorderColor, backgroundColor: enabled ? backgroundColor : "#DDDDDD"}]}
                       onPress={() => {
                           if(enabled){
                               ActionSheetIOS.showActionSheetWithOptions({options: [...actionSheetPickerValues, cancelText], cancelButtonIndex: actionSheetPickerValues.length}, optionSelectedIos)
                           }
                       }}>
                         <Text style={{color: fontColor}}>{selectedOption != undefined ? selectedOption.label : placeholder}</Text>
-                        <Image source={arrowDownIcon} style={{tintColor: iosArrowTintColor, height: 24, width: 24, resizeMode: "contain"}}/>
+                        <Image source={arrowDownIcon} style={[styles.arrowIconBaseStyle, {tintColor: iosArrowTintColor}]}/>
                     </TouchableOpacity>
                 </View>
             );
             break;
+        case "windows":
+        case "macos":
         default:
             view = (
                 <View>
@@ -110,7 +113,20 @@ const ProPicker = (
 }
 
 const styles = StyleSheet.create({
-
+    arrowIconBaseStyle: {
+        height: 24,
+        width: 24,
+        resizeMode: "contain"
+    },
+    iosPickerMainLayout: {
+        flexDirection: "row",
+        alignItems: "center",
+        borderWidth: 0.5,
+        justifyContent: "space-between",
+        padding: 16,
+        height: 50,
+        borderRadius: 10
+    }
 });
 
 export {

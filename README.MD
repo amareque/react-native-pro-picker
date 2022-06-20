@@ -75,7 +75,6 @@ let options : ProPickerOption[] = [
 <br>
 
 ## Customizable Attributes 🕹️
-placeholder = "Select...", cancelText = "Cancel", enabled = true
 <table>
    <thead>
       <th>Attribute</th>

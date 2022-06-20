@@ -45,56 +45,56 @@ export default function App() {
     const [disabledSelectedItem, setDisabledSelectedItem] = React.useState<TestOptionModel>();
 
     return (
-      <SafeAreaView style={{flex: 1, backgroundColor: "#EEEEEE"}}>
+      <SafeAreaView style={styles.container}>
         <ScrollView>
-          <View style={{flex: 1, backgroundColor: '#EEEEEE', padding: 8}}>
-            <View style={{padding: 8}}>
-              <Text style={{marginBottom: 8}}>Basic Pro Picker Example:</Text>
-              <View style={{padding: 8}}>
+          <View style={styles.mainView}>
+            <View style={styles.paddedView}>
+              <Text style={styles.pickerTypeLabel}>Basic Pro Picker Example:</Text>
+              <View style={styles.paddedView}>
                 <ProPicker items={options} onItemSelected={(item) => {
                   setBasicSelectedItem(item);
                 }}/>
-                <View style={{paddingHorizontal: 16, marginTop: 8, flexDirection: "row", alignItems: "center"}}>
-                  <Text style={{marginEnd: 4}}>Selected item:</Text>
+                <View style={styles.selectedItemContainer}>
+                  <Text style={styles.selectedItemLabel}>Selected item:</Text>
                   <Text>{basicSelectedItem !== undefined ? `${basicSelectedItem!!.label} - ${basicSelectedItem!!.value}` : "No item selected"}</Text>
                 </View>
               </View>
             </View>
 
-            <View style={{padding: 8}}>
-              <Text style={{marginBottom: 8}}>Custom Texts Pro Picker Example:</Text>
-              <View style={{padding: 8}}>
+            <View style={styles.paddedView}>
+              <Text style={styles.pickerTypeLabel}>Custom Texts Pro Picker Example:</Text>
+              <View style={styles.paddedView}>
                 <ProPicker cancelText={"Custom Cancel Text"} placeholder={"Custom Placeholder Text"} items={options} onItemSelected={(item) => {
                   setCustomTextSelectedItem(item);
                 }}/>
                 <View style={{paddingHorizontal: 16, marginTop: 8, flexDirection: "row", alignItems: "center"}}>
-                  <Text style={{marginEnd: 4}}>Selected item:</Text>
+                  <Text style={styles.selectedItemLabel}>Selected item:</Text>
                   <Text>{customTextSelectedItem !== undefined ? `${customTextSelectedItem!!.label} - ${customTextSelectedItem!!.value}` : "No item selected"}</Text>
                 </View>
               </View>
             </View>
 
-            <View style={{padding: 8}}>
-              <Text style={{marginBottom: 8}}>Custom Colors Picker Example:</Text>
-              <View style={{padding: 8}}>
+            <View style={styles.paddedView}>
+              <Text style={styles.pickerTypeLabel}>Custom Colors Picker Example:</Text>
+              <View style={styles.paddedView}>
                 <ProPicker backgroundColor={"#7CA5B8"} fontColor={"white"} iosArrowTintColor={"#C6EBBE"} items={options} onItemSelected={(item) => {
                   setColorsSelectedItem(item);
                 }}/>
                 <View style={{paddingHorizontal: 16, marginTop: 8,  flexDirection: "row", alignItems: "center"}}>
-                  <Text style={{marginEnd: 4}}>Selected item:</Text>
+                  <Text style={styles.selectedItemLabel}>Selected item:</Text>
                   <Text>{colorsSelectedItem !== undefined ? `${colorsSelectedItem!!.label} - ${colorsSelectedItem!!.value}` : "No item selected"}</Text>
                 </View>
               </View>
             </View>
 
-            <View style={{padding: 8}}>
-              <Text style={{marginBottom: 8}}>Disabled Picker Example:</Text>
-              <View style={{padding: 8}}>
+            <View style={styles.paddedView}>
+              <Text style={styles.pickerTypeLabel}>Disabled Picker Example:</Text>
+              <View style={styles.paddedView}>
                 <ProPicker items={options} enabled={false} onItemSelected={(item) => {
                   setDisabledSelectedItem(item);
                 }}/>
                 <View style={{paddingHorizontal: 16, marginTop: 8, flexDirection: "row", alignItems: "center"}}>
-                  <Text style={{marginEnd: 4}}>Selected item:</Text>
+                  <Text style={styles.selectedItemLabel}>Selected item:</Text>
                   <Text>{disabledSelectedItem !== undefined ? `${disabledSelectedItem!!.label} - ${disabledSelectedItem!!.value}` : "No item selected"}</Text>
                 </View>
               </View>
@@ -116,5 +116,28 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-
+  container:{
+    flex:1,
+    backgroundColor:"#EEEEEE"
+  },
+  mainView:{
+    flex:1,
+    backgroundColor:"#EEEEEE",
+    padding:8
+  },
+  paddedView:{
+    padding:8
+  },
+  pickerTypeLabel:{
+    marginBottom:8
+  },
+  selectedItemLabel:{
+    marginEnd:4
+  },
+  selectedItemContainer:{
+    paddingHorizontal:16,
+    marginTop:8,
+    flexDirection:"row",
+    alignItems:"center"
+  }
 });
