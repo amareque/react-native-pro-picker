@@ -13,12 +13,12 @@ let actionSheetPickerValues: string[] = [];
 const arrowDownIcon = require("./assets/ic-arrow-down.png");
 
 const ProPicker = (
-    { items, onItemSelected, backgroundColor = "#FFFFFF", fontColor = "#000000", iosArrowTintColor = "#0451E4", iosBorderColor = "#000000", placeholder = "Select...", cancelText = "Cancel", enabled = true }
+    { items, onItemSelected, defaultOption, backgroundColor = "#FFFFFF", fontColor = "#000000", iosArrowTintColor = "#0451E4", iosBorderColor = "#000000", placeholder = "Select...", cancelText = "Cancel", enabled = true }
     :
-    { items: ProPickerOption[], onItemSelected: (option: ProPickerOption) => void, backgroundColor?: string, fontColor?: string, iosArrowTintColor?: string, iosBorderColor?: string, placeholder?: string, cancelText?: string, enabled?: boolean }
+    { items: ProPickerOption[], onItemSelected: (option: ProPickerOption) => void, defaultOption?: ProPickerOption, backgroundColor?: string, fontColor?: string, iosArrowTintColor?: string, iosBorderColor?: string, placeholder?: string, cancelText?: string, enabled?: boolean }
 ): JSX.Element => {
     const [options, setOptions] = React.useState<ProPickerOption[]>();
-    const [selectedOption, setSelectedOption] = React.useState<ProPickerOption>();
+    const [selectedOption, setSelectedOption] = React.useState<ProPickerOption | undefined>(defaultOption);
 
     let view: JSX.Element;
 
