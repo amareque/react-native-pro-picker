@@ -30,35 +30,23 @@ npm install react-native-pro-picker
 ## Usage 💡
 1. Add the following import statement:
 ```
-import { ProPicker, ProPickerOption } from 'react-native-pro-picker';
+import { ProPicker, ProPickerOption, ProPickerOptionItem } from 'react-native-pro-picker';
 ```
 
-2. Add some options:
+2. Add the <ProPicker/> component:
 ```
-let options : ProPickerOption[] = [
-  {
-    id: 1,
-    value: "js",
-    label: "JavaScript"
-  },
-  {
-    id: 2,
-    value: "ts",
-    label: "Typescript"
-  },
-  {
-    id: 3,
-    value: "kt",
-    label: "Kotlin"
-  },
-];
-
+<ProPicker onItemSelected={(item) => {
+  // Use the selected item.
+}}/>
 ```
 
 3. Add the <ProPicker/> component:
 ```
-<ProPicker items={options} onItemSelected={(item) => {
-  // Use the selected item.
+<ProPicker onItemSelected={(item) => {
+    <ProPickerOptionItem id={1} value={'js'} label={"Javascript"}/>
+    <ProPickerOptionItem id={2} value={'ts'} label={"Typescript"}/>
+    <ProPickerOptionItem id={3} value={'kt'} label={"Kotlin"}/>
+    <ProPickerOptionItem id={4} value={'sw'} label={"Swift"}/>
 }}/>
 ```
 
@@ -67,10 +55,10 @@ let options : ProPickerOption[] = [
 
 ## Necessary Attributes ⚠️
 
-| Attribute      |                          Description                          | Type              | 
-|----------------|:-------------------------------------------------------------:|-------------------|
-| items          | The options to select from. Should be of type ProPickerOption | ProPickerOption[] |
-| onItemSelected |          Callback for when the user selects an item.          | () => void        |
+| Attribute      |                            Description                            | Type                                         | 
+|----------------|:-----------------------------------------------------------------:|----------------------------------------------|
+| children       | The options to select from. Should be of type ProPickerOptionItem | ProPickerOptionItem \| ProPickerOptionItem[] |
+| onItemSelected |            Callback for when the user selects an item.            | () => void                                   |
 
 <br>
 
@@ -129,11 +117,11 @@ let options : ProPickerOption[] = [
 </table>
 
 ## Try it yourself 📱
-Try it on your device, by scanning this QR on the [Expo Go app](https://expo.dev/client):
-
-[![Expo QR](https://github.com/amareque/react-native-pro-picker/blob/main/media/example-app-expo-qr.png?raw=true)](https://github.com/amareque/react-native-pro-picker/blob/master/media/example-app-expo-qr.png?raw=true)
-
-(QR not showing? Visit the [Expo Project Page](https://expo.dev/@amareque/pro-picker-example-app?serviceType=classic&distribution=expo-go))
+Download the repo and do:
+```
+cd example-app/ 
+npm run start
+```
 
 ## Contributing 🍰
 
